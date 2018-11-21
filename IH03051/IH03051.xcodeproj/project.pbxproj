@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		846FDC8F21A5901B00C4A4F8 /* aram.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 846FDC8E21A5901B00C4A4F8 /* aram.mp3 */; };
+		846FDC9121A5902100C4A4F8 /* pi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 846FDC9021A5902100C4A4F8 /* pi.mp3 */; };
 		84C6E9DC219E7D2A008B093B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C6E9DB219E7D2A008B093B /* AppDelegate.swift */; };
 		84C6E9DE219E7D2A008B093B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C6E9DD219E7D2A008B093B /* ViewController.swift */; };
 		84C6E9E1219E7D2A008B093B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C6E9DF219E7D2A008B093B /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		846FDC8E21A5901B00C4A4F8 /* aram.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = aram.mp3; sourceTree = "<group>"; };
+		846FDC9021A5902100C4A4F8 /* pi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pi.mp3; sourceTree = "<group>"; };
 		84C6E9D8219E7D2A008B093B /* IH03051.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IH03051.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C6E9DB219E7D2A008B093B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84C6E9DD219E7D2A008B093B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +62,8 @@
 		84C6E9DA219E7D2A008B093B /* IH03051 */ = {
 			isa = PBXGroup;
 			children = (
+				846FDC8E21A5901B00C4A4F8 /* aram.mp3 */,
+				846FDC9021A5902100C4A4F8 /* pi.mp3 */,
 				84C6E9DB219E7D2A008B093B /* AppDelegate.swift */,
 				84C6E9DD219E7D2A008B093B /* ViewController.swift */,
 				84C6E9DF219E7D2A008B093B /* Main.storyboard */,
@@ -128,9 +134,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				846FDC9121A5902100C4A4F8 /* pi.mp3 in Resources */,
 				84C6E9E9219E7D2B008B093B /* LaunchScreen.storyboard in Resources */,
 				84C6E9E6219E7D2B008B093B /* Assets.xcassets in Resources */,
 				84C6E9E1219E7D2A008B093B /* Main.storyboard in Resources */,
+				846FDC8F21A5901B00C4A4F8 /* aram.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q6T-lY-g49">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,9 +15,38 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IH03051" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y0x-sj-hh5">
+                                <rect key="frame" x="59" y="542" width="150" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="btn_start"/>
+                                <connections>
+                                    <action selector="StartButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LQX-P7-2zw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2EM-wZ-eCb">
+                                <rect key="frame" x="105" y="366" width="204" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibn-a2-Da3">
+                                <rect key="frame" x="217" y="542" width="150" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="btn_stop"/>
+                                <connections>
+                                    <action selector="StopButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ycG-pz-zOu"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2EM-wZ-eCb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="105" id="Ur0-BK-90m"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2EM-wZ-eCb" secondAttribute="trailing" constant="105" id="dhr-rG-JHU"/>
+                            <constraint firstItem="2EM-wZ-eCb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="278" id="hp8-Km-h02"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="0rT-eY-ibS">
@@ -27,25 +56,53 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="TimeText" destination="2EM-wZ-eCb" id="o8b-1L-QYr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="132.68365817091455"/>
+            <point key="canvasLocation" x="1075.3623188405797" y="132.58928571428572"/>
         </scene>
         <!--Time Setting View Controller-->
         <scene sceneID="AQJ-da-JKp">
             <objects>
                 <viewController id="ZhO-13-6Wg" customClass="TimeSettingViewController" customModule="IH03051" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="v1c-TS-Wyq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mF8-fS-Ouo">
+                                <rect key="frame" x="0.0" y="235" width="414" height="216"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JoV-yw-7uy">
+                                <rect key="frame" x="145" y="551" width="125" height="120"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Button" image="btn_ decision"/>
+                                <connections>
+                                    <action selector="DecisionButton:" destination="ZhO-13-6Wg" eventType="touchUpInside" id="NCS-sh-pxc"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Vnd-ea-8kW" firstAttribute="trailing" secondItem="JoV-yw-7uy" secondAttribute="trailing" constant="144" id="92K-kV-4B9"/>
+                            <constraint firstItem="JoV-yw-7uy" firstAttribute="top" secondItem="mF8-fS-Ouo" secondAttribute="bottom" constant="100" id="FsB-C7-8Th"/>
+                            <constraint firstItem="JoV-yw-7uy" firstAttribute="leading" secondItem="Vnd-ea-8kW" secondAttribute="leading" constant="145" id="d44-0Y-Cy4"/>
+                            <constraint firstItem="mF8-fS-Ouo" firstAttribute="leading" secondItem="Vnd-ea-8kW" secondAttribute="leading" id="pMA-5L-552"/>
+                            <constraint firstItem="mF8-fS-Ouo" firstAttribute="top" secondItem="Vnd-ea-8kW" secondAttribute="top" constant="147" id="t1J-ez-vD1"/>
+                            <constraint firstItem="mF8-fS-Ouo" firstAttribute="trailing" secondItem="Vnd-ea-8kW" secondAttribute="trailing" id="vQ9-4n-CIQ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Vnd-ea-8kW"/>
                     </view>
+                    <connections>
+                        <outlet property="PickerView" destination="mF8-fS-Ouo" id="oyy-AP-5Ig"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YnL-3g-ew8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1857" y="133"/>
+            <point key="canvasLocation" x="1856.521739130435" y="132.58928571428572"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Pgq-TU-NH9">
@@ -53,7 +110,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="q6T-lY-g49" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sd0-9y-bnp">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -66,4 +123,9 @@
             <point key="canvasLocation" x="273" y="133"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="btn_ decision" width="120" height="120"/>
+        <image name="btn_start" width="140" height="140"/>
+        <image name="btn_stop" width="140" height="140"/>
+    </resources>
 </document>
