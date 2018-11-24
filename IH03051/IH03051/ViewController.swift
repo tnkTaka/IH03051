@@ -99,7 +99,6 @@ class ViewController: UIViewController,AVAudioPlayerDelegate {
         startTimer()
     }
     @IBAction func StopButton(_ sender: Any) {
-        piSound.stop()
         aramSound.stop()
         stopTimer()
     }
