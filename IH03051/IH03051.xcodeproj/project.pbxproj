@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84497F5D21AB060400C2F725 /* StopWatchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84497F5C21AB060300C2F725 /* StopWatchController.swift */; };
 		846FDC8F21A5901B00C4A4F8 /* aram.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 846FDC8E21A5901B00C4A4F8 /* aram.mp3 */; };
 		846FDC9121A5902100C4A4F8 /* pi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 846FDC9021A5902100C4A4F8 /* pi.mp3 */; };
 		84C6E9DC219E7D2A008B093B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C6E9DB219E7D2A008B093B /* AppDelegate.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		84497F5C21AB060300C2F725 /* StopWatchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchController.swift; sourceTree = "<group>"; };
 		846FDC8E21A5901B00C4A4F8 /* aram.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = aram.mp3; sourceTree = "<group>"; };
 		846FDC9021A5902100C4A4F8 /* pi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pi.mp3; sourceTree = "<group>"; };
 		84C6E9D8219E7D2A008B093B /* IH03051.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IH03051.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +68,7 @@
 				846FDC9021A5902100C4A4F8 /* pi.mp3 */,
 				84C6E9DB219E7D2A008B093B /* AppDelegate.swift */,
 				84C6E9DD219E7D2A008B093B /* ViewController.swift */,
+				84497F5C21AB060300C2F725 /* StopWatchController.swift */,
 				84C6E9DF219E7D2A008B093B /* Main.storyboard */,
 				84C6E9F0219E8C72008B093B /* TimeSettingViewController.swift */,
 				84C6E9E5219E7D2B008B093B /* Assets.xcassets */,
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84497F5D21AB060400C2F725 /* StopWatchController.swift in Sources */,
 				84C6E9DE219E7D2A008B093B /* ViewController.swift in Sources */,
 				84C6E9E4219E7D2A008B093B /* IH03051.xcdatamodeld in Sources */,
 				84C6E9F1219E8C72008B093B /* TimeSettingViewController.swift in Sources */,

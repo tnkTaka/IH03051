@@ -9,7 +9,6 @@
 import UIKit
 
 class TimeSettingViewController: UIViewController , UIPickerViewDelegate,UIPickerViewDataSource{
-    
     var setNum = 10
     let settings = UserDefaults.standard
     let dataList = ["10", "20", "30", "40", "50", "60"]

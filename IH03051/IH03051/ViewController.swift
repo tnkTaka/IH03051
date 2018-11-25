@@ -17,7 +17,6 @@ class ViewController: UIViewController,AVAudioPlayerDelegate {
     var piSound:AVAudioPlayer!
     var aramSound:AVAudioPlayer!
     
-    
     var displayTime = 0
     var setTime = 0
     var count = 0
@@ -49,6 +48,7 @@ class ViewController: UIViewController,AVAudioPlayerDelegate {
         aramSound.delegate = self
     }
     
+    // 画面遷移から復帰後、タイマーに値をセットする
     override func viewDidAppear(_ animated: Bool) {
         count = 0
         setTime = settings.integer(forKey:
@@ -56,6 +56,12 @@ class ViewController: UIViewController,AVAudioPlayerDelegate {
         TimeText.text = "残り\(setTime)秒"
     }
     
+    // 画面遷移時にタイマーを止める
+    override func viewDidDisappear(_ animated: Bool) {
+        stopTimer()
+    }
+    
+    // タイマーを起動
     func startTimer() {
         if let nowTimer = timer{
             if nowTimer.isValid == true{
@@ -69,6 +75,7 @@ class ViewController: UIViewController,AVAudioPlayerDelegate {
             repeats: true)
     }
     
+    // タイマーを停止
     func stopTimer() {
         if let nowTimer = timer{
             if nowTimer.isValid == true{
@@ -82,6 +89,7 @@ class ViewController: UIViewController,AVAudioPlayerDelegate {
         return displayTime
     }
     
+    // タイマーをカウントし表示
     @objc func timerCounter() {
         count += 1
         if displayUpdate() <= 0{
@@ -93,7 +101,6 @@ class ViewController: UIViewController,AVAudioPlayerDelegate {
             TimeText.text = "残り\(displayTime)秒"
         }
     }
-    
     @IBAction func StartButton(_ sender: Any) {
         piSound.play()
         startTimer()
